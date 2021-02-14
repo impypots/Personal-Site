@@ -1,31 +1,43 @@
-html {
-  margin: 0;
-  padding: 0;
-}
-
 .App {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
+  
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-wrap: wrap;
 }
 
-.HeaderBox {
+#HeaderBox {
   text-align: center;
   background-color: #282c34;
   min-height: 20vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: row;
-  align-items: center;
+ 
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-wrap: nowrap;
 }
 
-.HeaderBox h4 {
-  margin: 0;
-  padding: 0;
+#HeaderBox h4 {
+  margin: 0.8em 1em;
+}
+
+#EntryText {
+ margin-top: 10vh;
+}
+
+#EntryText h1 {
+  color: rgb(187, 59, 81);
+}
+
+.frontbutton {
+  min-height: 6vh;
+  min-width: 8vw;
+  margin: 2vh;
 }
 
 .App-link {

@@ -8,14 +8,19 @@
   flex-wrap: wrap;
 }
 
+h1 {
+  
+}
+
 #HeaderBox {
   text-align: center;
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 10vh;
   min-width: 100vw;
+  margin-bottom: 20vh;
   display: flex;
   flex-direction: row;
- 
+  align-items: center;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -23,7 +28,14 @@
 }
 
 #HeaderBox h4 {
-  margin: 0.8em 1em;
+  margin: 0 1em;
+  padding: 0.15em;
+}
+
+#HeaderBox h4:hover {
+  background-color: white;
+  color: #282c34;
+  cursor: pointer;
 }
 
 #EntryText {

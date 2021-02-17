@@ -8,10 +8,6 @@
   flex-wrap: wrap;
 }
 
-h1 {
-  
-}
-
 #HeaderBox {
   text-align: center;
   background-color: #282c34;
@@ -36,6 +32,7 @@ h1 {
   background-color: white;
   color: #282c34;
   cursor: pointer;
+  border-radius: 7px;
 }
 
 #EntryText {
@@ -54,6 +51,10 @@ h1 {
 
 .App-link {
   color: #61dafb;
+}
+
+#projects {
+  display: none;
 }
 
 @keyframes App-logo-spin {

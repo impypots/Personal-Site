@@ -26,12 +26,19 @@
 #HeaderBox h4 {
   margin: 0 1em;
   padding: 0.15em;
+  cursor: pointer;
+  transition: color 0.4s ease-in, background-color 0.4s ease-in;
 }
 
-#HeaderBox h4:hover {
+.headerFocus {
   background-color: white;
   color: #282c34;
-  cursor: pointer;
+  border-radius: 7px;
+}
+
+.headerBlur {
+  background-color: #282c34;
+  color: white;
   border-radius: 7px;
 }
 
@@ -54,6 +61,44 @@
 }
 
 #projects {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ProjectNode {
+  color: #282c34;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1vw;
+  padding: 0.5vw;
+  width: 35vw;
+}
+
+.ProjectNode img {
+  width: 12vw;
+  height: 12vw;
+  display: inline;
+}
+
+.ProjectNode div {
+  display: inline;
+  max-width: 12vw;
+  margin: 0;
+}
+
+.ProjectNode a {
+  font-size: 0.8em;
+  text-align: right;
+}
+
+#home {
+  display: block;
+}
+
+#contact {
   display: none;
 }
 

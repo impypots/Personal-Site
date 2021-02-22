@@ -1,24 +1,34 @@
 import Header from './header';
-import EntryText from './EntryText';
-import Button from './Button';
 import Projects from './Projects';
+import Home from './Home';
+import Contact from './Contact'
 import './App.css';
 import {useState} from 'react';
 
 function App() {
-  const [display, setDisplay] = useState(true);
+  const [display, setDisplay] = useState('home');
 
+  //Goes to home page!
+  function goHome() {
+    setDisplay('home');
+  }
+
+  //Goes to projects page!
   function goProjects() {
-    alert("Something happened...")
+    setDisplay('work');
+  }
+
+  //Goes to contact page!
+  function goContact() {
+    setDisplay('contact');
   }
 
   return (
     <div className="App">
-      <Header />
-      <EntryText />
-      <Button value="Past Projects" color="rgb(187, 59, 81)" onClick={goProjects} />
-      <Button value="Contact Me"  color="gray"/>
-      <Projects />
+      <Header display={display} goProjects={goProjects} goHome={goHome} goContact={goContact} />
+      <Home display={display === 'home' ? 'block' : 'none'} goProjects={goProjects} goHome={goHome} goContact={goContact} />
+      <Projects display={display === 'work' ? 'flex' : 'none'} />
+      <Contact display={display === 'contact' ? 'block' : 'none'} />
     </div>
   );
 }

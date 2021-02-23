@@ -74,18 +74,27 @@
   text-align: center;
   margin: 1vw;
   padding: 0.5vw;
+  max-height: 24vh;
   width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .ProjectNode img {
-  width: 12vw;
-  height: 12vw;
+  width: 6vw;
+  height: 6vw;
   display: inline;
 }
 
 .ProjectNode div {
   display: inline;
-  max-width: 12vw;
+  max-width: 16vw;
+  max-height: 24vh;
+  margin: 0;
+}
+
+.ProjectNode h6 {
   margin: 0;
 }
 

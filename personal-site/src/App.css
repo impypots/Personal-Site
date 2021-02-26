@@ -118,6 +118,30 @@
 
 #contact {
   display: none;
+ 
+}
+
+#contact h1 {
+  color: rgb(187, 59, 81);
+}
+
+#contact input {
+  color: white;
+  background: #282c34;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid white;
+  border-style: solid;
+}
+
+
+#contact form {
+  width: 25vw;
+  margin: auto;
+  border-radius: 7px;
+  padding: 1.5vh 0;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {

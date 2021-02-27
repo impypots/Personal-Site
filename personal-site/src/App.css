@@ -125,7 +125,7 @@
   color: rgb(187, 59, 81);
 }
 
-#contact input {
+.formLines {
   color: white;
   background: #282c34;
   border-top: 0;
@@ -133,8 +133,25 @@
   border-right: 0;
   border-bottom: 2px solid white;
   border-style: solid;
+  margin-top: 2.4vh;
 }
 
+#contactButton {
+  border: none;
+  background:#282c34;
+  color: white;
+  cursor: pointer;
+  height: 6vh;
+  width: 12vw;
+  box-shadow: inset 0 -0.3vh 0 0 rgb(187, 59, 81);
+  transition: ease-in-out 0.3s;
+  font-size: 0.9em;
+}
+
+#contactButton:hover {
+  box-shadow: inset 0 -6vh 0 0 rgb(187, 59, 81);
+    border-radius: 3px;
+}
 
 #contact form {
   width: 25vw;
@@ -142,6 +159,10 @@
   border-radius: 7px;
   padding: 1.5vh 0;
   text-align: center;
+}
+
+textarea {
+  margin: 1vh 0;
 }
 
 @media only screen and (max-width: 600px) {

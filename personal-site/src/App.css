@@ -8,6 +8,11 @@
   flex-wrap: wrap;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.1em;
+}
+
 #HeaderBox {
   text-align: center;
   background-color: #282c34;
@@ -48,12 +53,27 @@
 
 #EntryText h1 {
   color: rgb(187, 59, 81);
+  margin-bottom: 8vh;
 }
 
 .frontbutton {
-  min-height: 6vh;
-  min-width: 8vw;
-  margin: 2vh;
+  border: none;
+  background:#282c34;
+  color: white;
+  cursor: pointer;
+  height: 6vh;
+  min-width: 11vw;
+  box-shadow: inset 0 -0.4vh 0 0 rgb(187, 59, 81);
+  transition: ease-in-out 0.2s;
+  font-size: 0.8em;
+  margin: 1vw;
+  border-radius: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.frontbutton:hover {
+  box-shadow: inset 0 -6vh 0 0 rgb(187, 59, 81);
+    border-radius: 3px;
 }
 
 .App-link {
@@ -87,7 +107,7 @@
   width: 10vw;
   height: 10vw;
   display: inline;
-  transition: height 0.6s ease, width 0.6s ease;
+  transition: height 0.3s ease-in, width 0.3s ease-in;
 }
 
 .ProjectNode img:hover {
@@ -144,7 +164,7 @@
   height: 6vh;
   width: 12vw;
   box-shadow: inset 0 -0.3vh 0 0 rgb(187, 59, 81);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.25s;
   font-size: 0.9em;
 }
 

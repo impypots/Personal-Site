@@ -8,8 +8,8 @@ function Home(props) {
             display: props.display
         }}>
             <EntryText />
-            <Button value="Past Projects" color="rgb(187, 59, 81)" onClick={props.goProjects} />
-            <Button value="Contact Me"  color="gray" onClick={props.goContact} />
+            <Button value="PAST PROJECTS" onClick={props.goProjects} />
+            <Button value="CONTACT ME"  onClick={props.goContact} />
         </div>
     )
 }

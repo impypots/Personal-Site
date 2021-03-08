@@ -2,11 +2,6 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 
 function Contact(props) {
-    function noSendEmail (e) {
-        e.preventDefault();
-        alert("Somethin happened !!");
-        e.target.reset();
-    }
 
 
     function sendEmail(e) {
@@ -28,7 +23,7 @@ function Contact(props) {
         }}>
             <h1>Say Hello!</h1>
             <h5>Feel free to email me below. Put something else here later lol.</h5>
-            <form onSubmit={noSendEmail}>
+            <form onSubmit={sendEmail}>
                 <label htmlFor="name">Name: </label>
                 <input type="text" className="formLines" name="name" /><br/>
                 <label htmlFor="email">Email: </label>

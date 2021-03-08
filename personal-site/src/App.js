@@ -4,9 +4,11 @@ import Home from './Home';
 import Contact from './Contact'
 import './App.css';
 import {useState} from 'react';
+import { Transition } from 'react-transition-group';
 
 function App() {
   const [display, setDisplay] = useState('home');
+  const [inProp, setInProp] = useState(false);
 
   //Goes to home page!
   function goHome() {
